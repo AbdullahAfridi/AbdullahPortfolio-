@@ -1,0 +1,517 @@
+:root {
+    --outer-shadow: 3px 3px 3px #3d3a3a, -3px -3px 3px #2a2f32;
+    --outer-shadow-0: 0 0 0 #3d3939, 0 0 0 #2a2f32;
+    --inner-shadow: inset 3px 3px 3px #3d3939, inset -3px -3px 3px #2a2f32;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.outer-shadow {
+    box-shadow: var(--outer-shadow);
+}
+
+.inner-shadow {
+    box-shadow: var(--inner-shadow);
+}
+
+.hover-inn-shadow {
+    position: relative;
+    z-index: 1;
+}
+
+.hover-inn-shadow:hover {
+    box-shadow: var(--outer-shadow-0);
+}
+
+.hover-inn-shadow:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.hover-inn-shadow:hover:after {
+    box-shadow: var(--inner-shadow);
+}
+
+
+/*--------------------------
+icons
+--------------------------*/
+
+.icons .fa-html5 {
+    color: rgb(246, 82, 22);
+}
+
+.icons .fa-angular {
+    color: #C62828;
+}
+
+.icons .fa-css3 {
+    color: #2965f1;
+}
+
+.icons .fa-php {
+    color: #4971cc;
+}
+
+.icons .fa-vuejs {
+    color: #29f1dd;
+}
+
+.icons .fa-node-js {
+    color: #29f147;
+}
+
+
+
+
+.icons i {
+    transition: all 3s ease;
+    animation: spin 20s ease-in-out infinite;
+}
+
+.icon1 i {
+    font-size: 30px;
+    animation: spin 9s ease-in infinite;
+    position: absolute;
+    z-index: 99;
+}
+
+.fa-location-arrow {
+    animation: spin 6s ease-in infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.social-lnks .fa-facebook-f {
+    color: #4267B2;
+}
+
+.social-lnks .fa-instagram {
+    color: #C13584;
+}
+
+.social-lnks .fa-twitter {
+    color: #1DA1F2;
+}
+
+.social-lnks .fa-linkedin-in {
+    color: #0e76a8;
+}
+
+.social-lnks i:hover {
+    transform: scale(1.5);
+}
+
+.social-links i:hover {
+    transform: scale(1.9);
+}
+
+.service-items {
+    background-color: #292c2f;
+}
+
+.fa-facebook-f:hover {
+    color: rgb(39, 119, 189);
+}
+
+.fa-github:hover {
+    color: darkgray;
+}
+
+.fa-instagram:hover {
+    color: #C13584;
+}
+
+.fa-linkedin-in:hover {
+    color: rgb(65, 122, 236);
+}
+
+.fa-twitter:hover {
+    color: rgb(26, 177, 194);
+}
+
+
+/*-------------------
+home section
+--------------------*/
+
+.home .home-img .img-box {
+    background-color: #212529;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.home .home-img .img-box img {
+    background-color: #25292d;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid transparent;
+}
+
+.home .home-img .icon i {
+    border-radius: 50%;
+}
+
+.home .home-img .img-box :hover {
+    background-color: rgb(227, 236, 40);
+    cursor: pointer;
+}
+
+h2 {
+    color: rgb(255, 248, 248);
+}
+
+h3 {
+    color: blanchedalmond;
+}
+
+p {
+    color: gainsboro;
+}
+
+.text-d {
+    font-size: 21px;
+    transition: .5s linear;
+    text-shadow: 0 0 10px rgb(12, 118, 154), 0 0 20px rgb(74, 174, 171), 0 0 40px rgb(19, 113, 123);
+}
+
+.about {
+    background-color: #262a2d;
+}
+
+.dropdown i {
+    color: yellow;
+}
+
+.dropdown :hover {
+    color: rgb(255, 255, 247);
+    transform: scale(0.9);
+}
+
+.dropdown .dropdown-menu {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.card-1:hover {
+    background-color: rgb(30, 30, 30);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+/*---------------------
+home section
+---------------------*/
+
+.home .dragon img {
+    max-width: 100px;
+    height: 100px;
+    position: relative;
+    animation: topBounce 5s ease-in-out infinite;
+}
+
+.myimg img {
+    max-width: 100px;
+    height: 50px;
+    position: relative;
+    animation: topBounce 5s ease-in-out infinite;
+}
+
+@keyframes topBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+
+/*-------------------------
+portfolio section
+--------------------------*/
+
+.portfolio {
+    background-color: rgb(34, 34, 34);
+}
+
+.portfolio-items img {
+    height: 320px;
+    width: 100%;
+
+}
+.portfolio-item img {
+    height: 220px;
+    width: 100%;
+
+}
+
+.carousel-inner img {
+    height: 320px;
+    width: 100%;
+
+}
+
+.portfolio-item:hover {
+    background-color: rgb(30, 30, 30);
+    transition: all 0.0s ease;
+    transform: scale(1.0);
+    font-size: 1px;
+
+}
+
+.portfolio-items:hover {
+    background-color: rgb(30, 30, 30);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.portfolio .carousel-inner:hover {
+    background-color: rgb(30, 30, 30);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+.portfolio-details {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+}
+
+.portfolio-details h3 {
+    font-size: 19px;
+    bottom: 80%;
+    position: absolute;
+    transform: translateY(-50%);
+    /* Center it perfectly vertically */
+}
+
+.portfolio-details p {
+    font-size: 14px;
+    font-weight: 300;
+    bottom: 28%;
+    position: absolute;
+    margin: 30px;
+    text-align: justify;
+    transform: translateY(-50%);
+}
+
+
+.portfolio-details .bollet {
+    display: flex;
+}
+
+.portfolio-details .bol h5 {
+    margin-top: 80px;
+    font-size: 15px;
+    left: 8%;
+    top: 22%;
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+}
+
+.portfolio-details .bol ul {
+    margin-top: 110px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    left: 8%;
+    top: 22%;
+    position: absolute;
+    text-align: justify;
+
+}
+
+.portfolio-details .bol2 h5 {
+    font-size: 15px;
+    margin-top: 80px;
+    right: 30%;
+    top: 22%;
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+}
+
+.portfolio-details .bol2 ul {
+    margin-top: 110px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    right: 1%;
+    top: 22%;
+    position: absolute;
+    text-align: justify;
+
+}
+
+.iconF h3{
+    bottom: -3%;
+    position: absolute;
+    font-size: 14px;
+    left: 8%;
+    color: #fff;
+    font-weight: 600;
+ 
+ }
+
+.iconF i{
+   bottom: 1%;
+   position: absolute;
+   font-size: 22px;
+   left: 33%;
+   color: #fff;
+   
+
+}
+.iconF i:hover{
+  
+    color: #0e90bf;
+ 
+ }
+
+
+
+.portfolio-item:hover .portfolio-details {
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+
+.portfolio-img {
+    height: 280px;
+    /* Set the height as needed */
+
+    border-radius: 10px;
+
+}
+
+.portfolio-details .rearrange{
+
+    top: 25%;
+}
+
+.portfolio-details .githubIc{
+
+    left: 39%;
+   font-size: 22px;
+   bottom: 2%;
+}
+
+.portfolio-details .iconF .mH{
+
+    left: 60%;
+}
+.portfolio-details .iconF .mI{
+
+    left: 90%;
+}
+.portfolio-details .shopP{
+    top: 20%;;
+}
+ .bollet .bol .shopH{
+    top: 27%;
+}
+
+.portfolio-details .iconShop i{
+    left: 90%;
+}
+.portfolio-details .iconShop {
+    left: 60%;
+}
+.portfolio-details .shopU {
+    margin-top: 10px;
+}
+
+.portfolio-item .tmdone{
+    width: 100%; 
+    height: 220px; 
+    object-fit: contain; 
+}
+
+
+
+/*----------------------------------
+freelancer section
+-----------------------------------*/
+
+.freelance-section {
+    background: linear-gradient(to right, #51514b, #0dc4be);
+    opacity: 0.8;
+}
+
+.freelance-section .card:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+/*--------------------
+testimonials section
+--------------------*/
+
+.testimonials {
+    background-color: #1e2125;
+}
+
+.testimonials .author-info img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*--------------------------------------
+ Contact section
+--------------------------------------*/
+
+.contact-form input {
+    background-color: rgb(64, 69, 71);
+}
+
+.contact-form input:hover {
+    background-color: rgb(48, 49, 49);
+}
+
+.contact-form textarea {
+    background-color: rgb(64, 69, 71);
+}
+
+.contact-form textarea:hover {
+    background-color: rgb(48, 49, 49);
+}
